@@ -21,7 +21,6 @@ begin
 end;
 
 function khoangcach(var a,b:longint):longint;
-
 var distance:longint;
 begin
     if a>=b then distance:=a-b

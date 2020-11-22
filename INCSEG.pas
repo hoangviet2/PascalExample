@@ -23,12 +23,12 @@ begin
   max:=0;
   assign(f,fo);
   rewrite(f);
-  for i:=1 to n do
-  while (a[i]<=a[i+1]) and (i<=n) do
-  begin
-  tong:=tong+1;
-  if tong>max then max:=tong;
-  end;
+  for i:=1 to n-1 do
+    if (a[i]<=a[i+1]) and (i<=n) then
+      begin
+      tong:=tong+1;
+      if tong>max then max:=tong;
+      end;
   write(f,max);
   close(f);
 end;
